@@ -1,0 +1,14 @@
+/* Цвет основного текста #000000 */
+/* Вторичный цвет rgba(0, 0, 0, 0.8) */
+/* белый цвет #ffffff */
+/* акцент  #301130*/
+
+ul {
+    list-style: none;
+}
+
+/* hero */
+.button {
+    color: var(--title-text-color);
+    background-color: var(--background-color);
+}

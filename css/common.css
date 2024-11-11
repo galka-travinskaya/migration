@@ -1,0 +1,32 @@
+:root{
+    --primary-text-color: #000000;
+    --title-text-color: rgba(0, 0, 0, 0.8);
+    --accent-text-color: #e581e5;
+    --background-color: #ffffff;
+}
+
+body {
+    /* color: rgba(0, 0, 0, 0.8); */
+    background-color: var(--background-color);
+}
+
+h1, h2, h3 {
+    color: var(var(--primary-text-color));
+}
+
+/* header */
+
+/* .site-nav */
+
+.site-nav a {
+    color: var(--title-text-color);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--accent-text-color);
+}
+
+.link.current {
+    color: var(--accent-text-color);
+}
