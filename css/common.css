@@ -3,23 +3,34 @@
     --title-text-color: rgba(0, 0, 0, 0.8);
     --accent-text-color: #e581e5;
     --background-color: #ffffff;
+    --font-text: 'Roboto', sans-serif;
 }
 
 body {
-    /* color: rgba(0, 0, 0, 0.8); */
+    color: var(--title-text-color);
     background-color: var(--background-color);
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    /* возможно 
+    letter-spacing: -0.015em; */
 }
 
-h1, h2, h3 {
-    color: var(var(--primary-text-color));
+ul {
+    list-style: none;
 }
 
 /* header */
-
 /* .site-nav */
 
-.site-nav a {
+.site-nav a,
+.contacts a {
     color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.2;
 }
 
 .site-nav a:hover,
@@ -28,5 +39,10 @@ h1, h2, h3 {
 }
 
 .link.current {
+    color: var(--accent-text-color);
+}
+
+.contacts a:hover,
+.contacts a:focus {
     color: var(--accent-text-color);
 }
