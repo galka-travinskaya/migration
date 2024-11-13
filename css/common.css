@@ -1,7 +1,7 @@
 :root{
     --primary-text-color: #000000;
     --title-text-color: rgba(0, 0, 0, 0.8);
-    --accent-text-color: #e581e5;
+    --accent-text-color: #1d30bf;
     --background-color: #ffffff;
     --font-text: 'Roboto', sans-serif;
 }
@@ -13,8 +13,9 @@ body {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.67;
-    /* возможно 
-    letter-spacing: -0.015em; */
+    letter-spacing: -0.015em;
+
+    margin: 0;
 }
 
 ul {
@@ -31,6 +32,8 @@ ul {
     font-weight: 500;
     font-size: 15px;
     line-height: 1.2;
+
+    text-decoration: none;
 }
 
 .site-nav a:hover,
