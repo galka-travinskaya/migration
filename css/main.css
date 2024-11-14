@@ -1,35 +1,72 @@
+/* header */
+
+.site-nav {
+    display: flex;
+    /* justify-content: ; */
+}
 
 /* hero */
 
+.hero {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
 .hero-title {
+    margin-bottom: 30px;
+
     color: var(--primary-text-color);
 
     font-weight: 500;
     font-size: 56px;
     line-height: 1.43;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .button {
+    border-radius: 5px;
+    padding: 11px 34px;
+    min-width: 130px;
+    border: 3px solid var(--accent-text-color);
+
     color: var(--title-text-color);
     background-color: var(--background-color);
 
     font-family: inherit;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 15px;
     line-height: 1.2;
 }
 
+.button:hover,
+.button:focus {
+    color: var(--background-color);
+    background-color: var(--accent-text-color);
+    border: 3px solid transparent;
+}
+
 /* section */
 
+.section {
+    margin-bottom: 30px;
+}
+
 .section-title {
+    margin-bottom: 24px;
     color: var(--primary-text-color);
 
     font-weight: 500;
     font-size: 24px;
     line-height: 1.5;
+    text-align: center;
 }
 
 .section-text {
     font-weight: 700;
+}
+
+/* features */
+
+.features > .item:nth-child(2n+1) {
+    background-color: var(--background-section-color);
 }
