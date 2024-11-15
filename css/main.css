@@ -2,20 +2,33 @@
 
 .site-nav {
     display: flex;
-    /* justify-content: ; */
 }
 
 /* hero */
 
 .hero {
+    height: 800px;
+    max-width: 1600px;
     margin-bottom: 50px;
+    background-image: linear-gradient(
+        to right, 
+        /* rgba(95, 95, 104, 0.8),
+        rgba(112, 131, 173, 0.8) */
+        rgba(0, 0, 0, 0.5),
+        rgba(70, 67, 67, 0.8)
+        ),
+        url(../images/Romania.jpg);
+    background-position: center;
+    background-size: cover;
     text-align: center;
+    background-color: var(--title-text-color);
 }
 
 .hero-title {
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    padding-top: 250px;
 
-    color: var(--primary-text-color);
+    color: var(--background-color);
 
     font-weight: 500;
     font-size: 56px;
@@ -48,7 +61,7 @@
 /* section */
 
 .section {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
 }
 
 .section-title {
@@ -63,10 +76,135 @@
 
 .section-text {
     font-weight: 700;
+    text-align: justify;
 }
 
 /* features */
 
+.features {
+    display: flex;
+    /* width: calc((100% - 45px) / 4); */
+}
+
+.features .item {
+    padding: 20px 50px;
+    width: calc(100% / 4);
+    /* margin-right: 15px; */
+}
+
+/* .features .item:not(:last-child) {
+    margin-right: 15px;
+} */
+
+/* .features .item:last-child {
+    margin-right: 0;
+} */
+
 .features > .item:nth-child(2n+1) {
     background-color: var(--background-section-color);
+}
+
+/* benefits */
+
+.wrap {
+    display: flex;
+}
+
+.benefits-img {
+    margin-right: 50px;
+}
+
+.benefits-desc {
+    margin-bottom: 100px;
+    font-weight: 500;
+}
+
+.benefits li{
+    display: flex;
+    align-items: center;
+}
+
+.benefits li::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-image: url(../images/pngegg.png);
+    background-size: contain;
+}
+
+/* как мы работаем */
+
+/* .work {
+    display: flex;
+    margin: auto;
+} */
+
+/* .pic {
+    width: 30%;
+    margin-left: 100px;
+} */
+
+/* .description-wrap { */
+    /* display: inline-block; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin: 0 auto; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    /* width: 100px; */
+    /* width: 30%; */
+    /* margin-left: 100px; */
+/* } */
+
+    /* .description-wrap::before {
+    display: inline;
+    margin: auto 0;
+    content: "";
+    height: 250px;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/следы.png);
+} */
+
+/* .description-wrap::before {
+    content: "";
+    background-image: url(../images/следы.png);
+} */
+
+.description li{
+    box-sizing: content-box;
+}
+
+.accordion {
+    background-color: var(--background-section-color);
+    color: var(--title-text-color);
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    padding: 18px;
+    /* margin-left: auto;
+    margin-right: auto; */
+    width: 30%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.accordion:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.active, 
+.accordion:hover,
+.accordion:focus {
+    background-color: var(--background-accordion-hover-color);
+}
+
+.box {
+    padding: 18px;
+    background-color: var(--background-color);
+    display: none;
+    overflow: hidden;
 }
