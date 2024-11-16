@@ -209,8 +209,17 @@
                         <li><a href=""></a></li>
                     </ul>
                 </li>
+            </ul>
             </div>
         </footer>
 
+
+        <script>
+            const { height: pageHeaderHeight } = document
+            .querySelector ("page-header")
+            .getBoundingClientRect();
+
+            document.body.style.paddingTop = '${pageHeaderHeight}px';
+        </script>
     </body>
     </html>
