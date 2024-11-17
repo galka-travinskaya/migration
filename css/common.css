@@ -42,10 +42,7 @@ ul {
     left: 0;
     width: 100%;
     min-height: 79px;
-    background-color: var(--background-accordion-hover-color);
-    /* background-color: var(--background-header-color); */
-    /* background-color: rgba(238, 229, 229, 0.279); */
-   
+    background-color: var(--background-section-color);
 }
 
 .logo {
@@ -56,6 +53,7 @@ ul {
     display: flex;
     align-items: center;
 }
+
 /* .site-nav */
 
 .site-nav > li {
