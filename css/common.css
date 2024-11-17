@@ -140,3 +140,46 @@ ul {
 .contacts li {
     text-align: center;
 }
+
+.contacts-list {
+    display: flex;
+    justify-content: baseline;
+}
+
+.contacts-list li {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    align-items: center;
+}
+
+.contacts-list li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.contacts-list a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-list a:hover,
+.contacts-list a:focus {
+    border-radius: 30%;
+    outline: 2px solid var(--background-accordion-hover-color);
+}
+
+.icon {
+    display: inline-block;
+    margin-right: 10px;
+    /* fill: var(--background-header-color); */
+    align-items: center
+}
+
+.contacts-icon {
+    width: 20px;
+    height: 20px;
+}

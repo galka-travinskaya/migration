@@ -187,6 +187,7 @@
     margin-right: auto; */
     width: 30%;
     text-align: left;
+    
     border: none;
     outline: none;
     transition: 0.4s;
@@ -200,6 +201,16 @@
 .accordion:hover,
 .accordion:focus {
     background-color: var(--background-accordion-hover-color);
+}
+
+.accordion-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.accordion-icon:hover,
+.accordion-icon:focus {
+    fill: aqua;
 }
 
 .box {
