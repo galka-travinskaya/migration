@@ -38,20 +38,31 @@ ul {
 
 .page-header {
     position: fixed;
+    display: flex;
     top: 0;
     left: 0;
     width: 100%;
+    /* padding-top: 15px;
+    padding-bottom: 15px; */
+    align-items: center;
     min-height: 79px;
     background-color: var(--background-section-color);
 }
 
+.inline-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .logo {
-    margin-right: 30px;
+    margin-right: 50px;
 }
 
 .nav {
     display: flex;
     align-items: center;
+    /* justify-content: space-between; */
 }
 
 /* .site-nav */
@@ -72,17 +83,6 @@ ul {
 .site-nav li:not(:last-child) {
     margin-right: 40px;
 }
-
-/* .site-nav li:hover,
-.site-nav li:focus {
-    border: 5px groove var(--accent-text-color);
-    border-bottom: none;
-}
-
-.site-nav li.current {
-    border: 5px groove var(--accent-text-color);
-    border-bottom: none;
-} */
 
 .site-nav a,
 .contacts a {
@@ -173,8 +173,13 @@ ul {
 .icon {
     display: inline-block;
     margin-right: 10px;
-    /* fill: var(--background-header-color); */
-    align-items: center
+    fill: var(--background-header-color);
+    align-items: center;
+}
+
+.icon:hover,
+.icon:focus {
+    fill: #1d30bf;
 }
 
 .contacts-icon {

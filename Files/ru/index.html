@@ -12,36 +12,25 @@
     </head>
     <body>
         <header class="page-header">
-                <nav class="container nav">
-                    <a href="./" class="logo"><img src="" alt="Логотип"></a>
-                    <ul class="site-nav list">
-                        <li class="current"><a href="./" class="link current">Главная</a></li>
-                        <li><a href="./pageMoldova.html" class="link">Гражданство Молдавии</a></li>
-                        <li><a href="./pageRomania.html" class="link">Гражданство Румынии</a></li>
-                        <li><a href="./pageBulgary.html" class="link">Гражданство Болгарии</a></li>
-                        <!-- <li"><a href="./aboutCumpany.html" class="link">О нас</a></li> -->
-                        <li><a href="./" class="link">Контакты</a></li>
-                    </ul>
-                </nav>
-                <!-- если список будет под каждым по 3 ссылки сетей -->
-                <!-- <ul>
-                    <li><a href="tel:+380634305232" class="item">+380634305232</a></li>
-                    <li><a href="tel:+380634305232" class="item">+380634305232</a></li>
-                    <li><a href="tel:+380634305232" class="item">+380634305232</a></li>
-                    <!-- <li><a href="" aria-label="Ссылка на Viber 2 lesson">+380634305232</a></li> -->
-                    <!-- если просто иконка без текста, то ставим ариа-лейбел -->
-                <!-- </ul> -->
-                <!-- <div class="contacts">
-                    <a href="tel:+380634305232" class="item">+380634305232</a>
-                    <a href="mailto:htravinskaya@gmail.com" class="item">htravinskaya@gmail.com</a>
-                </div> -->
+                <div class="container inline-wrap">
+                    <nav class="nav">
+                        <!-- <a href="./index.html" class="logo"><img src="" alt="Логотип"></a> -->
+                        <ul class="site-nav list">
+                            <li class="current"><a href="./" class="link current">Главная</a></li>
+                            <li><a href="./pageMoldova.html" class="link">Гражданство Молдавии</a></li>
+                            <li><a href="./pageRomania.html" class="link">Гражданство Румынии</a></li>
+                            <li><a href="./pageBulgary.html" class="link">Гражданство Болгарии</a></li>
+                            <!-- <li"><a href="./aboutCumpany.html" class="link">О нас</a></li> -->
+                            <li><a href="#footer" class="link">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <button type="button" class="button" data-modal-open>Оставить заявку</button>
+                </div>
         </header>
         
         <main>
             <section class="hero">
-                <!-- <img src="../../images/Romania.jpg" alt="Румыния"> -->
-                <h1 class="hero-title">Гражданство Болгарии, Молдовы и Румынии — ключ к новым возможностям в Европе!</h1>
-                <button type="button" class="button">Оставить заявку</button>
+                <h1 class="hero-title">Гражданство Болгарии, Молдовы и Румынии — <br>ключ к новым возможностям в Европе!</h1>
             </section>
 
             <div class="container">
@@ -87,19 +76,15 @@
                             <p class="benefits-desc">Мы предлагаем вам поддержку на каждом этапе — от первого обращения до получения гражданства. Вам не придется беспокоиться о юридических тонкостях или сложностях в документации. Наши эксперты сделают процесс получения гражданства предельно простым и безопасным для вас.</p>
                             <ul class="benefits">
                                 <li>
-                                    <!-- <img src="../../images/pngegg.png" alt="Чекбокс" width="50px"> -->
                                     <p>Бесплатная консультация по всем вопросам.</p>
                                 </li>
                                 <li>
-                                    <!-- <img src="../../images/pngegg.png" alt="Чекбокс" width="50px"> -->
                                     <p>Проверка и помощь в подготовке документов.</p>
                                 </li>
                                 <li>
-                                    <!-- <img src="../../images/pngegg.png" alt="Чекбокс" width="50px"> -->
-                                        <p>Подача заявления и подготовка к собеседованию.</p>
+                                    <p>Подача заявления и подготовка к собеседованию.</p>
                                 </li>
                                 <li>
-                                    <!-- <img src="../../images/pngegg.png" alt="Чекбокс" width="50px"> -->
                                     <p>Полное юридическое сопровождение.</p>   
                                 </li>
                                 <li>
@@ -114,7 +99,8 @@
                 <!-- как мы работаем -->
     
                 <section class="section">
-                    <img src="../../images/следы.png" alt="Шаги" width="30%">
+                    <div class="work">
+                        <img src="../../images/следы.png" alt="Шаги" class="pic">
                     <div class=".description-wrap">
                         <h2 class="section-title">6 простых шагов</h2>
                     <ul class="description">
@@ -170,6 +156,7 @@
                         </li>
                     </ul>
                     </div>
+                    </div>
                 </section>
     
                 <!-- отзывы -->
@@ -192,7 +179,7 @@
            
         </main>
 
-        <footer class="page-footer">
+        <footer class="page-footer" id="footer">
             <div class="container">
                 <h2 class="section-title">Свяжитесь с нами</h2>
             <ul class="contacts"> 
@@ -228,10 +215,10 @@
                         </li>
                     </ul>
                     <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
-                        <p>Адрес</p>
                         <svg class="contacts-icon">
                             <use href="../../images/symbol-defs.svg#icon-location2"></use>
                         </svg>
+                        <p>Адрес</p>
                     </a>
                 </li>
                 <li>
@@ -260,10 +247,10 @@
                         </a></li>
                     </ul>
                     <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
-                        <p>Адрес</p>
                         <svg class="contacts-icon">
                             <use href="../../images/symbol-defs.svg#icon-location2"></use>
                         </svg>
+                        <p>Адрес</p>
                     </a>
                 </li>
                 <li>
@@ -293,23 +280,87 @@
                         </a></li>
                     </ul>   
                     <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
-                        <p>Адрес</p>
                         <svg class="contacts-icon">
                             <use href="../../images/symbol-defs.svg#icon-location2"></use>
                         </svg>
+                        <p>Адрес</p>
                     </a>
                 </li>
             </ul>
             </div>
         </footer>
 
+        <!-- <div class="backdrop" data-modal>
+            <form class="form">
+                <button class="close-popup" data-modal-close>
+                    <svg width="18" height="18">
+                        <use href="../../images/symbol-defs.svg#icon-cancel-circle"></use>
+                    </svg>
+                </button>
+                <b class="modal-title">Свяжитесь с нами</b>
+                <p>Получить гражданство Болгарии, Молдовы или Румынии легко, если вы находитесь в руках профессионалов. Оставьте заявку, и наш менеджер свяжется с вами в ближайшее время для бесплатной консультации.</p>
+                <div class="form-field">
+                    <input class="form-input" 
+                           type="text" 
+                           name="name" 
+                           id="name" 
+                           placeholder=" "/>
+                    <label class="form-label" for="name">Имя</label>
+                </div>
+                
+                <div class="form-field">
+                    <input class="form-input" 
+                           type="tel" 
+                           name="tel" 
+                           id="tel" 
+                           placeholder=" "/>
+                    <label class="form-label" for="tel">Телефон</label>
+                </div>
+                
+                <div class="form-field">
+                    <input class="form-input" 
+                           type="email" 
+                           name="email" 
+                           id="email" 
+                           placeholder=" "/>
+                    <label class="form-label" for="email">Почта</label>
+                </div>
+                
+                <div class="textarea-field">
+                    <textarea class="form-textarea" name="comment" id="comment" rows="1" placeholder=" "></textarea>
+                    <label class="label-textarea" for="comment">Выберите страну</label>
+                </div>
+                            
+                <button type="submit" class="button-submit" data-modal-close>Отправить</button>
+            </form>
+        </div> -->
 
-        <script>
-            const { height: pageHeaderHeight } = document
-            .querySelector ("page-header")
-            .getBoundingClientRect();
+        <form class="js-form">
+            <label for="name">Имя</label>
+            <input type="text" name="name" id="name"/>
 
-            document.body.style.paddingTop = '${pageHeaderHeight}px';
-        </script>
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel"/>
+
+            <label for="email">Почта</label>
+            <input type="email" name="email" id="email"/>
+
+            <div role="group">
+                <input type="checkbox" name="country" value="Bulgary" id="Bulgary">
+                <label for="Bulgary">Болгария</label>
+
+                <input type="checkbox" name="country" value="Romania" id="Romania">
+                <label for="Romania">Румыния</label>
+
+                <input type="checkbox" name="country" value="Moldova" id="Moldova">
+                <label for="Moldova">Молдавия</label>
+            </div>
+
+            <button type="submit">Оставить заявку</button>
+        </form>
+
+        <script src="../js/pageHeaderHeight.js"></script>
+        <script src="../js/accordion.js"></script>
+        <script src="../js/modal.js"></script>
     </body>
     </html>
