@@ -46,6 +46,7 @@ ul {
     padding-bottom: 15px; */
     align-items: center;
     min-height: 79px;
+    outline: 1px solid #000000;
     background-color: var(--background-section-color);
 }
 
@@ -119,6 +120,7 @@ ul {
 /* footer */
 
 .page-footer{
+    min-width: 100%;
     margin: auto;
     padding-top: 50px;
     padding-bottom: 50px;
