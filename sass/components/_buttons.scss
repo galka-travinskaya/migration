@@ -55,3 +55,29 @@
     }
     }
 }
+
+.btn-submit {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 5px;
+        padding: 5px 15px;
+        min-width: 130px;
+        height: 50px;
+        border: 3px solid $accent-text-color;
+
+        color: $title-text-color;
+        background-color: $background-color;
+
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
+        
+    &:hover,
+    &:focus {
+        color: $background-color;
+        background-color: $accent-text-color;
+        border: 3px solid transparent;
+    }
+}
