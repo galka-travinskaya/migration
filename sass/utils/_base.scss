@@ -1,0 +1,113 @@
+body {
+    margin: 0 auto; 
+    color: var(--title-text-color);
+    background-color: var(--background-color);
+    font-family: var(--font-text);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: -0.015em;
+
+    &.modal-open {
+        overflow: hidden;
+    }
+}
+
+h1,
+h2,
+h3 {
+    margin: 0 auto;
+}
+
+ul {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (max-width: 767px) {
+        // max-width: 480px;  
+        max-width: 520px;  
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
+}
+
+// .container {
+//     min-width: 320px;
+//     max-width: 1170px;
+//     padding-left: 15px;
+//     padding-right: 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+
+// .container {
+    // margin: 0 auto;
+    // // width: 1440px;
+
+    // @media screen and (min-width: 480px) {
+    //     width: 480px;
+    //     padding-right: 15px;
+    //     padding-left: 15px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     width: 768px;
+    //     padding-right: 15px;
+    //     padding-left: 15px;
+    // }
+
+    // @media screen and (min-width: 1140px) {
+    //     width: 1140px;
+    // }
+
+    
+// }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.section {
+    // margin-bottom: 20px;
+    padding: 15px 15px;
+
+    &-title {
+        margin-bottom: 24px;
+        color: var(--primary-text-color);
+
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    &-text {
+        font-weight: 500;
+        text-align: justify;
+    }
+}

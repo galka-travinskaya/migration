@@ -1,0 +1,35 @@
+.features {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;    
+    }
+}
+
+.features-item {
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+        padding: 10px 10px;
+        width: 50%;
+
+        @media screen and (max-width: 1200px) {
+            &:nth-child(3n+1) {
+                background-color: $background-section-color;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding: 20px 50px;
+        width: calc(100% / 4);
+
+        &:nth-child(2n+1) {
+            background-color: $background-section-color;
+        }
+    }
+}
+
+.img-features {
+    max-width:220px;
+    height:150px;
+}

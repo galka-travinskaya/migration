@@ -6,22 +6,69 @@
         <title>Document</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-        <link rel="stylesheet" href="../../css/common.css">
-        <link rel="stylesheet" href="../../css/main.css">
+        <!-- <link rel="stylesheet" href="../../css/common.css">
+        <link rel="stylesheet" href="../../css/main.css"> -->
+        <link rel="stylesheet" href="../../css/secondaryPages.min.css">
     </head>
     <body>
-        <main>
+        <header class="page-header">
             <div class="container">
-            <section class="section">
-                <h1 class="page-title">Гражданство Молдавии: Ваш билет в Европу и новую жизнь!</h1>
-                <p>
+                <div class="main-page">
+                    <a href="./" class="logo">
+                        <img src="./" alt="Логo">
+                    </a>
+                    <button 
+                        type="button" 
+                        class="menu-button is-open" 
+                        aria-expanded="false" 
+                        aria-controls="main-nav"
+                        data-menu-button>
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="icon-menu" href="../../images/spriteNew.svg#icon-menu_40px-1"></use>
+                                <use class="icon-cross" href="../../images/spriteNew.svg#icon-close_40px-1"></use>
+                            </svg>
+                    </button>
+    
+                    <nav class="main-nav" id="main-nav" data-menu>  
+                        <ul class="site-nav">
+                            <li class="item">
+                                <a href="./index.html" class="link">Главная</a></li>
+                            <li class="item">
+                                <a href="./pageBulgary.html" class="link">Гражданство Болгарии</a></li>
+                            <li class="item">
+                                <a href="./pageMoldova.html" class="link current">Гражданство Молдавии</a></li>
+                            <li class="item">
+                                <a href="./pageRomania.html" class="link">Гражданство Румынии</a></li>
+                            <li class="item">
+                                <a href="./index.html#footer" class="link">Контакты</a></li>
+                        </ul>
+                    </nav> 
+                    
+                    <button type="button" class="button-header" data-modal-open>Оставить заявку</button>
+    
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero-Moldova">
+                <div class="hero-box">
+                    <h1 class="hero-title">
+                        Гражданство Молдавии: Ваш билет в Европу и новую жизнь!
+                    </h1>
+                    <button type="button" class="button" data-modal-open>Оставить заявку</button>   
+                </div>
+            </section>
+
+            <div class="container">
+                <p class="section-text">
                     Добро пожаловать в Молдавию — страну, расположенную в самом сердце Восточной Европы, с богатым культурным наследием и впечатляющими природными красотами. Получение гражданства Молдавии предоставляет уникальную возможность стать частью страны, которая активно движется в сторону европейской интеграции, сохраняя при этом свои уникальные традиции и национальное наследие. Здесь вы найдёте комфортную и доступную жизнь, идеальные условия для семей и бизнеса, а также открытые возможности для путешествий и карьерного роста.            
                 </p>
-            </section>
             
             <!-- <div class="sections-wrapper"> -->
                 
                 <section class="section">
+                    
                     <h2 class="section-title">
                         Преимущества гражданства Молдавии
                     </h2>
@@ -115,7 +162,7 @@
                             <h2 class="section-title">
                                 Возможности для Бизнеса и Инвестиций           
                             </h2>
-                            <p class="page-text">
+                            <p class="section-text">
                                 Молдавия предлагает благоприятные условия для развития бизнеса и инвестиций. Льготы для иностранных инвесторов, удобные налоговые условия и низкие операционные затраты делают страну привлекательной для предпринимателей. Молдавия активно развивает сельское хозяйство, виноделие, IT-сектор и туризм, что открывает широкие возможности для инвесторов.            
                             </p>
                         </div>
@@ -130,7 +177,7 @@
                         <h2 class="section-title">Часто задаваемые вопросы</h2>
                     <ul class="description-list">
                         <li>
-                           <button class="accordion section-text">Каковы основные требования для получения гражданства?
+                           <button class="accordion">Каковы основные требования для получения гражданства?
                             <svg class="accordion-icon">
                                 <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
                             </svg>
@@ -142,7 +189,7 @@
                            </div>
                         </li>
                         <li>
-                           <button class="accordion section-text"> Можно ли сохранить двойное гражданство?
+                           <button class="accordion"> Можно ли сохранить двойное гражданство?
                             <svg class="accordion-icon">
                                 <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
                             </svg>
@@ -154,7 +201,7 @@
                            </div>
                         </li>
                         <li>
-                            <button class="accordion section-text">Как долго занимает процесс получения гражданства?
+                            <button class="accordion">Как долго занимает процесс получения гражданства?
                                 <svg class="accordion-icon">
                                     <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
                                 </svg>
@@ -166,7 +213,7 @@
                             </div>
                         </li>
                         <li>
-                            <button class="accordion section-text">Какие преимущества даёт гражданство Молдавии?
+                            <button class="accordion">Какие преимущества даёт гражданство Молдавии?
                                 <svg class="accordion-icon">
                                     <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
                                 </svg>
@@ -178,7 +225,7 @@
                             </div>
                         </li>
                         <li>
-                           <button class="accordion section-text">
+                           <button class="accordion">
                             Что делать, если мой запрос на гражданство отклонили?
                             <svg class="accordion-icon">
                                 <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
@@ -199,5 +246,7 @@
         </main>
 
         <script src="../js/accordion.js"></script>
+        <script src="../js/menu.js"></script>
+
     </body>
     </html>

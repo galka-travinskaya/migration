@@ -1,0 +1,57 @@
+.button {
+    @media screen and (max-width: 1199px) {
+        border-radius: 5px;
+        padding: 11px 34px;
+        min-width: 130px;
+        height: 50px;
+        border: 3px solid $accent-text-color;
+
+        color: $title-text-color;
+        background-color: $background-color;
+
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
+        
+    &:hover,
+    &:focus {
+        color: $background-color;
+        background-color: $accent-text-color;
+        border: 3px solid transparent;
+        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.button-header {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 1200px) {
+        border-radius: 5px;
+        padding: 11px 34px;
+        min-width: 130px;
+        height: 50px;
+        border: 3px solid $accent-text-color;
+
+        color: $title-text-color;
+        background-color: $background-color;
+
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 1.2;
+        
+    &:hover,
+    &:focus {
+        color: $background-color;
+        background-color: $accent-text-color;
+        border: 3px solid transparent;
+    }
+    }
+}

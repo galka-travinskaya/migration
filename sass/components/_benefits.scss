@@ -1,0 +1,149 @@
+.wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        width: 100%;
+    }
+}
+
+.benefits-img {
+    @media screen and (max-width: 768px) {
+        display: none;
+        
+        // width="50%" height="570px" 
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 50%;
+        height: 370px;
+        margin-right: 20px;
+        /* height: 700px; */
+    }
+
+    @media screen and (min-width: 1200px) {
+        // display: block;
+        width: 50%;
+        height: 590px;
+        margin-right: 50px;
+        /* height: 700px; */
+    }
+}
+
+.benefits-title {
+    color: var(--primary-text-color);
+    text-align: center;
+
+    @media screen and (max-width: 768px) {
+        margin-bottom: 14px;   
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.5; 
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 14px;
+    
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.5;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 24px;
+    
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+}
+
+.benefits-desc {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+    
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-size: 13px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+.benefits li{
+    display: flex;
+    align-items: center;
+    max-height: 54px;
+
+    &::before {
+        content: "";
+        background-image: url(../images/pngegg.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-items: center;
+
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            margin-right: 15px;
+            width: 30px;
+            height: 30px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 40px;
+            height: 40px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 60px;
+            height: 60px;
+        }
+    }
+
+    // @media screen and (max-width: 1199px) {
+    //     &::before {
+    //         content: "";
+    //         width: 30px;
+    //         height: 30px;
+    //         background-image: url(../images/pngegg.png);
+    //         background-size: contain;
+    //     }
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     &::before {
+    //         content: "";
+    //         width: 60px;
+    //         height: 60px;
+    //         background-image: url(../images/pngegg.png);
+    //         background-size: contain;
+    //     }
+    // }
+}
+
+.benefits p {
+    margin-top: 0;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    line-height: 1.6;
+
+    @media screen and (max-width: 768px) {
+        font-size: 17px;
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 13px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 17px;
+    }
+}

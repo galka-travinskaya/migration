@@ -6,20 +6,64 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-    <link rel="stylesheet" href="../../css/common.css">
-    <link rel="stylesheet" href="../../css/main.css">
+    <!-- <link rel="stylesheet" href="../../css/common.css"> -->
+    <!-- <link rel="stylesheet" href="../../css/main.css"> -->
+    <link rel="stylesheet" href="../../css/secondaryPages.min.css">
+
 </head>
 <body>
-    <main>
+    <header class="page-header">
         <div class="container">
-        <section class="section">
-            <h1 class="page-title">
-                Присоединитесь к Европе с гражданством Болгарии!
-            </h1>
-            <p>
+            <div class="main-page">
+                <a href="./" class="logo">
+                    <img src="./" alt="Логo">
+                </a>
+                <button 
+                    type="button" 
+                    class="menu-button is-open" 
+                    aria-expanded="false" 
+                    aria-controls="main-nav"
+                    data-menu-button>
+                        <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                            <use class="icon-menu" href="../../images/spriteNew.svg#icon-menu_40px-1"></use>
+                            <use class="icon-cross" href="../../images/spriteNew.svg#icon-close_40px-1"></use>
+                        </svg>
+                </button>
+
+                <nav class="main-nav" id="main-nav" data-menu>  
+                    <ul class="site-nav">
+                        <li class="item">
+                            <a href="./index.html" class="link">Главная</a></li>
+                        <li class="item">
+                            <a href="./pageBulgary.html" class="link current">Гражданство Болгарии</a></li>
+                        <li class="item">
+                            <a href="./pageMoldova.html" class="link">Гражданство Молдавии</a></li>
+                        <li class="item">
+                            <a href="./pageRomania.html" class="link">Гражданство Румынии</a></li>
+                        <li class="item">
+                            <a href="./index.html#footer" class="link">Контакты</a></li>
+                    </ul>
+                </nav> 
+                
+                <button type="button" class="button-header" data-modal-open>Оставить заявку</button>
+
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-Bulgary">
+            <div class="hero-box">
+                <h1 class="hero-title">
+                    Присоединитесь к Европе с гражданством Болгарии!
+                </h1> 
+                <button type="button" class="button" data-modal-open>Оставить заявку</button>   
+            </div>
+        </section>
+        <div class="container">
+            <p class="section-text">
                 Болгария — это страна с древними традициями, живописными природными красотами и динамично развивающейся экономикой. Получение болгарского гражданства предоставляет доступ ко всем преимуществам Европейского Союза, а также к уникальным возможностям в рамках самого государства. Гражданство Болгарии откроет перед вами двери к высокому уровню жизни, качественному образованию, лучшим медицинским услугам и стабильной деловой среде.
             </p>
-        </section>
         
         <!-- <div class="sections-wrapper"> -->
             
@@ -27,9 +71,10 @@
                 <h2 class="section-title">
                     Преимущества гражданства Болгарии
                 </h2>
+
                 <ul class="adv-list">
                     <li class="adv-item">
-                        <img class="adv-pic" src="../../images/travel-7539914_640.jpg" alt="Карта Европы">
+                        <img class="adv-pic" src="../../images/travel-7539914_640.jpg" alt="Карта мира">
                         <h3 class="adv-headline">
                             Гражданство ЕС:
                         </h3>
@@ -56,7 +101,7 @@
                         </p>
                     </li>
                     <li class="adv-item">
-                        <img class="adv-pic" src="../../images/images.jpg" alt="Доктор">
+                        <img class="adv-pic" src="../../images/doctor-6676747_640.jpg" alt="Доктор">
                         <h3 class="adv-headline">
                             Качественное здравоохранение:
                         </h3>
@@ -138,7 +183,7 @@
                     <h2 class="section-title">Часто задаваемые вопросы</h2>
                 <ul class="description-list">
                     <li>
-                       <button class="accordion section-text">
+                       <button class="accordion">
                         Какие документы нужны для подачи на гражданство?                       
                         <svg class="accordion-icon">
                         <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
@@ -151,7 +196,7 @@
                        </div>
                     </li>
                     <li>
-                       <button class="accordion section-text"> 
+                       <button class="accordion"> 
                         Можно ли получить гражданство Болгарии через инвестиции?
                         <svg class="accordion-icon">
                             <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
@@ -164,7 +209,7 @@
                        </div>
                     </li>
                     <li>
-                        <button class="accordion section-text">
+                        <button class="accordion">
                             Какой срок рассмотрения заявления?
                             <svg class="accordion-icon">
                                 <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
@@ -177,7 +222,7 @@
                         </div>
                     </li>
                     <li>
-                        <button class="accordion section-text">
+                        <button class="accordion">
                             Каковы требования к знанию языка?
                             <svg class="accordion-icon">
                                 <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
@@ -185,12 +230,13 @@
                         </button>
                         <div class="box">
                             <p>
-                                Требуется базовое знание болгарского языка, чтобы пройти собеседование.                        <svg class="accordion-icon">
+                                Требуется базовое знание болгарского языка, чтобы пройти собеседование.                        
+                                <!-- <svg class="accordion-icon"> -->
                             </p>
                         </div>
                     </li>
                     <li>
-                       <button class="accordion section-text">
+                       <button class="accordion">
                         Сохраняется ли родное гражданство?
                         <svg class="accordion-icon">
                             <use href="../../images/symbol-defs.svg#icon-circle-down"></use>
@@ -211,5 +257,6 @@
     </main>
 
     <script src="../js/accordion.js"></script>
+    <script src="../js/menu.js"></script>
 </body>
 </html>

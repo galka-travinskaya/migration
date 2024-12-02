@@ -5,88 +5,150 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css">
-        <link rel="stylesheet" href="../../css/common.css">
-        <link rel="stylesheet" href="../../css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/index.min.css">
+        <!-- <link rel="stylesheet" href="../../css/common.css"> -->
+        <!-- <link rel="stylesheet" href="../../css/index.css"> -->
     </head>
     <body>
         <header class="page-header">
-                <div class="container inline-wrap">
-                    <nav class="nav">
-                        <!-- <a href="./index.html" class="logo"><img src="" alt="Логотип"></a> -->
-                        <!-- <button 
+            <div class="container">
+                <div class="main-page">
+                        <a href="./">
+                            <!-- <svg class="logo">
+                                <use href="../../images/LogoMJ.svg"></use>
+                            </svg> -->
+                        </a>
+                    <button 
                         type="button" 
                         class="menu-button is-open" 
                         aria-expanded="false" 
                         aria-controls="main-nav"
                         data-menu-button>
                             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                                <use class="icon-menu" href="./images/spriteNew.svg#icon-menu_40px-1"></use>
-                                <use class="icon-cross" href="./images/spriteNew.svg#icon-close_40px-1"></use>
+                                <use class="icon-menu" href="../../images/spriteNew.svg#icon-menu_40px-1"></use>
+                                <use class="icon-cross" href="../../images/spriteNew.svg#icon-close_40px-1"></use>
                             </svg>
-                        </button> -->
-                        <ul class="site-nav list">
-                            <li class="current"><a href="./" class="link current">Главная</a></li>
-                            <li><a href="./pageMoldova.html" class="link">Гражданство Молдавии</a></li>
-                            <li><a href="./pageRomania.html" class="link">Гражданство Румынии</a></li>
-                            <li><a href="./pageBulgary.html" class="link">Гражданство Болгарии</a></li>
-                            <!-- <li"><a href="./aboutCumpany.html" class="link">О нас</a></li> -->
-                            <li><a href="#footer" class="link">Контакты</a></li>
+                    </button>
+
+                    <nav class="main-nav" id="main-nav" data-menu>  
+                        <ul class="site-nav">
+                            <li class="item">
+                                <a href="./index.html" class="link current">Главная</a></li>
+                            <li class="item">
+                                <a href="./pageBulgary.html" class="link">Гражданство Болгарии</a></li>
+                            <li class="item">
+                                <a href="./pageMoldova.html" class="link">Гражданство Молдавии</a></li>
+                            <li class="item">
+                                <a href="./pageRomania.html" class="link">Гражданство Румынии</a></li>
+                            <li class="item">
+                                <a href="#footer" class="link">Контакты</a></li>
                         </ul>
-                    </nav>
-                    <button type="button" class="button" data-modal-open>Оставить заявку</button>
+                    </nav> 
+                    
+                    <button type="button" class="button-header" data-modal-open>Оставить заявку</button>
+
                 </div>
+            </div>
         </header>
+        <!-- <header class="page-header"> -->
+                <!-- <div class="container inline-wrap"> -->
+                    <!-- <div class="container"> -->
+                        <!-- <div class="nav"> -->
+                        <!-- <div class="header-wrap">
+                            <a href="./index.html" class="logo"><img src="./" alt="Логотип"></a>
+                            <button 
+                            type="button" 
+                            class="menu-button is-open" 
+                            aria-expanded="false" 
+                            aria-controls="main-nav"
+                            data-menu-button>
+                                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                    <use class="icon-menu" href="../../images/spriteNew.svg#icon-menu_40px-1"></use>
+                                    <use class="icon-cross" href="../../images/spriteNew.svg#icon-close_40px-1"></use>
+                                </svg>
+                            </button>
+                            
+                            <nav class="main-nav" data-menu> -->
+                                <!-- <ul class="site-nav list"> -->
+                                    <!-- <ul class="site-nav is-open">
+                                        <li class="current"><a href="./" class="link current">Главная</a></li>
+                                        <li><a href="./pageMoldova.html" class="link">Гражданство Молдавии</a></li>
+                                        <li><a href="./pageRomania.html" class="link">Гражданство Румынии</a></li>
+                                        <li><a href="./pageBulgary.html" class="link">Гражданство Болгарии</a></li>
+                                        <li><a href="#footer" class="link">Контакты</a></li>
+                                    </ul>
+                            </nav>
+                        </div> -->
+                    <!-- </div>    
+        </header> -->
         
         <main>
-
+            <section class="hero">
+                <div class="hero-box">
+                    <h1 class="hero-title">Гражданство Болгарии, Молдовы и Румынии — <br>ключ к новым возможностям в Европе!</h1>
+                    <button type="button" class="button" data-modal-open>Оставить заявку</button>
+                </div> 
+            </section>
             <!-- герой -->
 
-            <section class="hero">
+            <!-- <section class="hero">
                 <h1 class="hero-title">Гражданство Болгарии, Молдовы и Румынии — <br>ключ к новым возможностям в Европе!</h1>
-            </section>
+            </section> -->
 
-            <div class="container">
+            <!-- <div class="container"> -->
 
                 <!-- intro -->
 
                 <section class="section">
                     <h2 class="section-title">Откройте для себя путь к гражданству одной из стран ЕС с нашей помощью. Мы знаем, как сделать процесс простым и быстрым</h2>
-                    <p>Получение гражданства Болгарии, Молдовы или Румынии открывает новые перспективы для вашего бизнеса, жизни и путешествий в Европе. Наши специалисты помогут вам пройти все этапы, начиная от оформления документов и заканчивая получением паспорта. С нами вы получите комплексное сопровождение и точные инструкции на каждом этапе процесса!</p>
+                    <p class="section-text">Получение гражданства Болгарии, Молдовы или Румынии открывает новые перспективы для вашего бизнеса, жизни и путешествий в Европе. Наши специалисты помогут вам пройти все этапы, начиная от оформления документов и заканчивая получением паспорта. С нами вы получите комплексное сопровождение и точные инструкции на каждом этапе процесса!</p>
                 </section>
     
-                <!-- преимущества -->
-                
+                <!-- преимущества features-->
                 <section class="section">
                     <h2 class="section-title">Преимущества гражданства ЕС для вас и вашей семьи</h2>
+
                     <ul class="features">
-                        <li class="item">
-                                <img src="../../images/Flag.jpg" alt="Флаг" max-width="220px" height="150">
-                            <p><span class="section-text">Свобода передвижения — </span><br>право на свободное передвижение и проживание в странах ЕС.</p>
+                        <li class="features-item">
+                                <img src="../../images/Flag.jpg" alt="Флаг" class="img-features">
+                            <p>
+                                <span class="section-text">Свобода передвижения: </span>
+                                <br>право на свободное передвижение и проживание в странах ЕС.
+                            </p>
                         </li>
-                        <li class="item">
-                            <img src="../../images/бизнес.jpg" alt="Бизнес" max-width="220px" height="150">
-                            <p><span class="section-text">Работа и бизнес в ЕС — </span><br>доступ к европейскому рынку труда и возможности для развития бизнеса.</p>
+                        <li class="features-item">
+                            <img src="../../images/бизнес.jpg" alt="Бизнес" class="img-features">
+                            <p>
+                                <span class="section-text">Работа и бизнес в ЕС: </span>
+                                <br>доступ к европейскому рынку труда и возможности для развития бизнеса.
+                            </p>
                         </li>
-                        <li class="item">
-                            <img src="../../images/medbg.jpg" alt="Образование" max-width="220px" height="150">
-                            <p><span class="section-text">Образование и медицина — </span><br>качественное образование для детей и доступ к лучшим медицинским учреждениям.</p>
+                        <li class="features-item">
+                            <img src="../../images/medbg.jpg" alt="Образование" class="img-features">
+                            <p>
+                                <span class="section-text">Образование и медицина:</span>
+                                <br>качественное образование для детей и доступ к лучшим медицинским учреждениям.
+                            </p>
                         </li>
-                        <li class="item">
-                            <img src="../../images/pravo.jpg" alt="Защита" max-width="220px" height="150">
-                            <p><span class="section-text">Безопасность и права — </span><br>защита и социальные права граждан ЕС, высокие стандарты жизни и безопасности.</p>
+                        <li class="features-item">
+                            <img src="../../images/pravo.jpg" alt="Защита" class="img-features">
+                            <p>
+                                <span class="section-text">Безопасность и права: </span>
+                                <br>защита и социальные права граждан ЕС, высокие стандарты жизни и безопасности.
+                            </p>
                         </li>
                     </ul>
                 </section>
     
-                <!-- услуги -->
+                <!-- услуги benefits-->
     
                 <section class="section">
                     <div class="wrap">
-                        <img src="../../images/scale_1200.jpg" alt="Женщина думает" width="50%" height="570px" class="benefits-img">
+                        <img src="../../images/scale_1200.jpg" alt="Женщина думает" class="benefits-img">
                         <div>
-                            <h2 class="section-title">Что входит в наши услуги?</h2>
+                            <h2 class="benefits-title">Что входит в наши услуги?</h2>
                             <p class="benefits-desc">Мы предлагаем вам поддержку на каждом этапе — от первого обращения до получения гражданства. Вам не придется беспокоиться о юридических тонкостях или сложностях в документации. Наши эксперты сделают процесс получения гражданства предельно простым и безопасным для вас.</p>
                             <ul class="benefits">
                                 <li>
@@ -102,7 +164,6 @@
                                     <p>Полное юридическое сопровождение.</p>   
                                 </li>
                                 <li>
-                                    <!-- <img src="../../images/pngegg.png" alt="Чекбокс" width="50px"> -->
                                     <p>Поддержка на всех этапах, вплоть до получения паспорта.</p>
                                 </li>
                             </ul>
@@ -110,7 +171,7 @@
                     </div>
                 </section>
     
-                <!-- как мы работаем -->
+                <!-- как мы работаем works-->
     
                 <section class="section description">
                     <div class="work">
@@ -189,7 +250,7 @@
                     <p>Donec eget rutrum sem. Curabitur risus massa, luctus quis nulla nec, facilisis auctor eros. Aliquam congue sollicitudin justo, vitae ultrices enim condimentum in. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis a sem sit amet felis hendrerit commodo nec sit amet felis. Morbi in congue elit. Etiam sagittis lectus tristique, gravida dolor ut, pretium nibh. Morbi sit amet pellentesque quam, quis aliquam turpis. Vestibulum pellentesque est non pellentesque gravida. Aliquam euismod quam sit amet enim ultrices tempus ut eget urna. Maecenas vel justo eget ante convallis pretium. Nunc vulputate hendrerit tellus sit amet fermentum. Vestibulum ligula libero, blandit id sollicitudin eu, ultrices non nisi. Aenean volutpat leo nisi, ut maximus felis auctor a. Fusce ut dolor vitae mi vehicula auctor a sed augue. Cras leo orci, porttitor ornare faucibus et, tempus vitae ligula.</p>
                     <p>Etiam scelerisque faucibus nunc vel commodo. Maecenas vitae aliquam mauris. Sed consectetur nibh non tellus vehicula, vel imperdiet dolor molestie. Fusce eu nisi scelerisque, porttitor est a, convallis massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec convallis lectus. Sed eget pulvinar tortor, sit amet pulvinar velit.</p>
                 </section> -->
-            </div>
+            <!-- </div> -->
            
         </main>
 
@@ -198,116 +259,129 @@
         <footer class="page-footer" id="footer">
             <div class="container">
                 <h2 class="section-title">Свяжитесь с нами</h2>
-            <ul class="contacts"> 
-                <li>
-                    <h3>Молдавия</h3>
-                    <a href="tel:+380634305232">
-                        <svg class="icon" width="10px" height="10px">
-                            <use href="../../images/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                        +380634305232
-                    </a>
-                    <ul class="contacts-list">
-                        <li>
-                            <a href="tg://resolve?domain=GalkaTravinska">
-                                <svg class="contacts-icon">
-                                    <use href="../../images/symbol-defs.svg#icon-telegram"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="viber://chat?number=%2B380634305232">
-                                <svg class="contacts-icon">
-                                    <use href="../../images/symbol-defs.svg#icon-viber"></use>
-                                </svg>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="whatsapp://send?phone=+380634305232">
-                                <svg class="contacts-icon">
-                                    <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                    <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
+                <ul class="contacts"> 
+                    <li>
+                        <h3>Молдавия</h3>
+                        <a href="tel:+380634305232">
+                            <svg class="icon" width="10px" height="10px">
+                                <use href="../../images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            +380634305232
+                        </a>
+                        <ul class="contacts-list">
+                            <li>
+                                <a href="tg://resolve?domain=GalkaTravinska">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="viber://chat?number=%2B380634305232">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="whatsapp://send?phone=+380634305232">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
+                            <svg class="contacts-icon">
+                                <use href="../../images/symbol-defs.svg#icon-location2"></use>
+                            </svg>
+                            <p>Адрес</p>
+                        </a>
+                    </li>
+                    <li>
+                        <h3>Болгария</h3>
+                        <a href="tel:+380634305232">
+                            <svg class="icon" width="10px" height="10px">
+                                <use href="../../images/symbol-defs.svg#icon-phone"></use>
+                            </svg>
+                            +380634305232
+                        </a>
+                        <ul class="contacts-list">
+                            <li>
+                                <a href="">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
                         <svg class="contacts-icon">
                             <use href="../../images/symbol-defs.svg#icon-location2"></use>
                         </svg>
                         <p>Адрес</p>
-                    </a>
-                </li>
-                <li>
-                    <h3>Болгария</h3>
-                    <a href="tel:+380634305232">
-                        <svg class="icon" width="10px" height="10px">
-                            <use href="../../images/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                        +380634305232
-                    </a>
-                    <ul class="contacts-list">
-                        <li><a href="">
-                            <svg class="contacts-icon">
-                                <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                        </a>
+                    </li>
+                    <li>
+                        <h3>Румыния</h3>
+                        <a href="tel:+380634305232">
+                            <svg class="icon" width="10px" height="10px">
+                                <use href="../../images/symbol-defs.svg#icon-phone"></use>
                             </svg>
-                        </a></li>
-                        <li><a href="">
+                            +380634305232
+                        </a>
+                        <ul class="contacts-list">
+                            <li>
+                                <a href="">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <svg class="contacts-icon">
+                                        <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>   
+                        <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
                             <svg class="contacts-icon">
-                                <use href="../../images/symbol-defs.svg#icon-viber"></use>
+                                <use href="../../images/symbol-defs.svg#icon-location2"></use>
                             </svg>
-                        </a></li>
-                        <li><a href="">
-                            <svg class="contacts-icon">
-                                <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
-                            </svg>
-                        </a></li>
-                    </ul>
-                    <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
-                        <svg class="contacts-icon">
-                            <use href="../../images/symbol-defs.svg#icon-location2"></use>
-                        </svg>
-                        <p>Адрес</p>
-                    </a>
-                </li>
-                <li>
-                    <h3>Румыния</h3>
-                    <a href="tel:+380634305232">
-                        <svg class="icon" width="10px" height="10px">
-                            <use href="../../images/symbol-defs.svg#icon-phone"></use>
-                        </svg>
-                        +380634305232
-                    </a>
-                    <ul class="contacts-list">
-                        <li>
-                            <a href="">
-                            <svg class="contacts-icon">
-                                <use href="../../images/symbol-defs.svg#icon-telegram"></use>
-                            </svg>
-                        </a></li>
-                        <li><a href="">
-                            <svg class="contacts-icon">
-                                <use href="../../images/symbol-defs.svg#icon-viber"></use>
-                            </svg>
-                        </a></li>
-                        <li><a href="">
-                            <svg class="contacts-icon">
-                                <use href="../../images/symbol-defs.svg#icon-whatsapp"></use>
-                            </svg>
-                        </a></li>
-                    </ul>   
-                    <a href="https://maps.app.goo.gl/Q3QkvNiuLtghdAGz7">
-                        <svg class="contacts-icon">
-                            <use href="../../images/symbol-defs.svg#icon-location2"></use>
-                        </svg>
-                        <p>Адрес</p>
-                    </a>
-                </li>
-            </ul>
+                            <p>Адрес</p>
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </footer>      
+        </footer>
 
         <!-- модалка -->
-         
+
+        
+
         <!-- <div class="backdrop is-hidden" data-modal>
             <div class="form">
                 <button class="icon-close" data-modal-close>
@@ -330,9 +404,9 @@
                         <label for="email">Почта</label>
                         <input type="email" name="email" id="email" autocomplete="on">
                     </li>
-                </ul> -->
+                </ul>
                 
-                <!-- <div class="agree">
+                <div class="agree">
                     <input class="checkbox" type="checkbox" 
                            name="policy" 
                            value="policy" 
@@ -343,15 +417,15 @@
                             <a href="#">Условия договора</a>
                         </span>
                     </label>
-                </div> -->
-                <!-- <div role="group" class="check">
+                </div>
+                <div role="group" class="check">
                     <b>Выберите страну</b>
                     <ul>
                         <li class="check-wrap">
                             <input class="checkbox" type="checkbox" name="country" value="Bulgary" id="Bulgary">
-                            <label class="checkbox-label" for="Bulgary"> -->
-                                <!-- <span>Болгария</span> -->
-                                <!-- Болгария
+                            <label class="checkbox-label" for="Bulgary">
+                                <span>Болгария</span>
+                                Болгария
                             </label> 
                         </li>
                         <li class="check-item">                  
@@ -372,17 +446,16 @@
                             </label>
                         </li>
                     </ul>
-                </div> -->
+                </div>
     
-                <!-- <button type="submit" class="btn-submit" data-modal-close>Оставить заявку</button>
+                <button type="submit" class="btn-submit" data-modal-close>Оставить заявку</button>
             </div>
         </div> -->
         
         <script src="../js/modal.js"></script>
         <script src="../js/pageHeaderHeight.js"></script>
+        <script src="../js/menu.js"></script>
         <script src="../js/accordion.js"></script>
-        <!-- <script src="../js/modal.js"></script> -->
         
-        <!-- <script src="../js/menu.js"></script> -->
     </body>
     </html>
