@@ -11,20 +11,12 @@
 
     @media screen and (min-width: 768px) {
         display: none;
-
-        // display: block;
-        // width: 50%;
-        // height: 370px;
-        /* padding-top: auto;
-        padding-bottom: auto; */
     }
 
     @media screen and (min-width: 1200px) {
         display: block;
         width: 30%;
-        height: 450px;
-        /* padding-top: auto;
-        padding-bottom: auto; */
+        min-height: 450px;
     }
 }
 
@@ -35,10 +27,6 @@
     align-items: center;
     margin: 0 auto;
 }
-
-// .description {
-//     height: 450px;
-// }
 
 .description-list li {
     @media screen and (max-width: 768px) {

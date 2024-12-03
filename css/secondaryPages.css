@@ -14,8 +14,9 @@ body .modal-open {
 
 h1,
 h2,
-h3 {
-  margin: 0 auto;
+h3,
+p {
+  margin: 0;
 }
 
 ul {
@@ -62,7 +63,7 @@ a {
   text-align: center;
 }
 .section-text {
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
 }
 
@@ -341,6 +342,7 @@ a {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -608,7 +610,7 @@ a {
 .page-text {
   margin-bottom: 10px;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
 }
 @media screen and (max-width: 768px) {
   .page-text {
@@ -636,6 +638,8 @@ a {
 }
 @media screen and (min-width: 768px) {
   .invest-pic {
+    margin-top: auto;
+    margin-bottom: auto;
     margin-left: 10px;
     width: 350px;
     height: 250px;
@@ -662,17 +666,13 @@ a {
 @media screen and (min-width: 768px) {
   .pic {
     display: none;
-    /* padding-top: auto;
-    padding-bottom: auto; */
   }
 }
 @media screen and (min-width: 1200px) {
   .pic {
     display: block;
     width: 30%;
-    height: 450px;
-    /* padding-top: auto;
-    padding-bottom: auto; */
+    min-height: 450px;
   }
 }
 
@@ -701,6 +701,7 @@ a {
   background-color: rgb(240, 240, 240);
   color: rgba(0, 0, 0, 0.8);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
   border: none;
   outline: none;
   transition: 0.4s;
@@ -766,5 +767,238 @@ a {
 }
 
 .box p {
-  margin: 0 auto;
+  margin: 0;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .backdrop {
+    padding: 30px 15px;
+    overflow-y: scroll;
+  }
+}
+@media screen and (min-width: 768px) {
+  .backdrop {
+    padding: 93px 15px;
+  }
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal {
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 450px;
+  max-height: 550px;
+  padding: 40px 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+  .modal {
+    position: relative;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+    min-height: 581px;
+  }
+}
+
+.icon-close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  background-size: contain;
+}
+.icon-close:hover svg, .icon-close:focus svg {
+  fill: #1d30bf;
+  border-color: #1d30bf;
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  line-height: 0.86px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+@media screen and (max-width: 768px) {
+  .form-title {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .form-title {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form-title {
+    margin-bottom: 30px;
+  }
+}
+
+.form-text {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-field {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.form-input {
+  width: 100%;
+  margin: 0;
+  padding: 12px 18px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+.form-input:not(:-moz-placeholder-shown) + .form-label {
+  color: #1d30bf;
+  transform: translateY(-45px) translateX(-16px);
+  background-color: transparent;
+}
+.form-input:focus + .form-label, .form-input:not(:placeholder-shown) + .form-label {
+  color: #1d30bf;
+  transform: translateY(-45px) translateX(-16px);
+  background-color: transparent;
+}
+
+.form-field input:hover,
+.form-field input:focus {
+  outline: none;
+  border-color: #1d30bf;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+.form-field input:hover:focus-within,
+.form-field input:focus:focus-within {
+  color: #1d30bf;
+}
+
+.form-label {
+  position: absolute;
+  top: 50%;
+  left: 42px;
+  transform: translateY(-50%);
+  color: #000000;
+  font-size: 15px;
+  transition: transform 250ms;
+}
+
+.icon-modal {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.form-field:focus-within > .icon-modal {
+  fill: #1d30bf;
+}
+
+.checkblock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  position: absolute;
+  display: flex;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.checkbox-label::before {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+  flex-shrink: 0;
+  content: "";
+  background-image: url(../../images/check.svg);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  border-radius: 1px;
+}
+.checkbox:checked + .checkbox-label::before {
+  background-color: #2196F3;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: #1d30bf;
+}
+
+.checkbox-label {
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: 0.03em;
+}
+@media screen and (max-width: 1199px) {
+  .checkbox-label {
+    font-size: 15px;
+    line-height: 1.16;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    margin-left: 8px;
+  }
+}
+.checkbox-label a {
+  margin-left: 3px;
+  color: #1d30bf;
+  text-decoration-line: underline;
+}
+@media screen and (max-width: 1199px) {
+  .checkbox-label a {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
+.form-headline {
+  font-size: 16px;
 }/*# sourceMappingURL=secondaryPages.css.map */

@@ -14,8 +14,9 @@ body .modal-open {
 
 h1,
 h2,
-h3 {
-  margin: 0 auto;
+h3,
+p {
+  margin: 0;
 }
 
 ul {
@@ -62,7 +63,7 @@ a {
   text-align: center;
 }
 .section-text {
-  font-weight: 500;
+  font-weight: 400;
   text-align: justify;
 }
 
@@ -341,6 +342,7 @@ a {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -481,6 +483,11 @@ a {
 
 .features-item {
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .features-item {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features-item {
@@ -661,17 +668,13 @@ a {
 @media screen and (min-width: 768px) {
   .pic {
     display: none;
-    /* padding-top: auto;
-    padding-bottom: auto; */
   }
 }
 @media screen and (min-width: 1200px) {
   .pic {
     display: block;
     width: 30%;
-    height: 450px;
-    /* padding-top: auto;
-    padding-bottom: auto; */
+    min-height: 450px;
   }
 }
 
@@ -700,6 +703,7 @@ a {
   background-color: rgb(240, 240, 240);
   color: rgba(0, 0, 0, 0.8);
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
   border: none;
   outline: none;
   transition: 0.4s;
@@ -765,7 +769,7 @@ a {
 }
 
 .box p {
-  margin: 0 auto;
+  margin: 0;
 }
 
 .page-footer {
@@ -971,6 +975,7 @@ a {
 .form-text {
   font-size: 15px;
   text-align: center;
+  margin-bottom: 15px;
 }
 
 .form-field {

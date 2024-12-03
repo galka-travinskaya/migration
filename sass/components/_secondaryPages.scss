@@ -145,16 +145,11 @@
 .page-text {
     margin-bottom: 10px;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
     @media screen and (max-width: 768px) {
         text-align: center;
     }
 }
-
-// .invest-content {
-//     padding-top: 30px;
-//     padding-bottom: 30px;
-// }
 
 .invest-text {
     @media screen and (min-width: 768px) {
@@ -173,6 +168,8 @@
     }
 
     @media screen and (min-width: 768px) {
+        margin-top: auto;
+        margin-bottom: auto;
         margin-left: 10px;
         width: 350px;
         height: 250px;

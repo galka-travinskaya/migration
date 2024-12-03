@@ -7,6 +7,11 @@
 
 .features-item {
     text-align: center;
+    // margin-top: 0;
+
+    @media screen and (max-width: 768px) {
+         margin-bottom: 30px;
+    }
 
     @media screen and (min-width: 768px) {
         padding: 10px 10px;
