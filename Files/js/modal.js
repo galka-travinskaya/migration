@@ -28,7 +28,9 @@
         });
     });
 
-    document.querySelector('.btn-submit').addEventListener('click', () => {
+    document.querySelector('.btn-submit').addEventListener('click', (event) => {
+        event.preventDefault();
+
         const name = document.getElementById('name').value;
         const email = document.getElementById('email').value;
         const phone = document.getElementById('tel').value;
@@ -47,6 +49,8 @@
         } catch (error) {
             console.log(error);
         }
+
+        toggleModal();
     })
 })();
     

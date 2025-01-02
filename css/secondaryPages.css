@@ -30,25 +30,10 @@ a {
 }
 
 .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
   margin-left: auto;
   margin-right: auto;
-}
-@media screen and (max-width: 767px) {
-  .container {
-    max-width: 520px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
 }
 
 .section {
@@ -69,9 +54,9 @@ a {
 
 .logo {
   display: block;
-  height: 30px;
+  width: 100px;
+  height: 60px;
   margin-right: 20px;
-  background-color: aqua;
 }
 
 .page-header {
@@ -100,7 +85,7 @@ a {
   justify-content: space-between;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .main-nav {
     display: none;
     position: absolute;
@@ -118,7 +103,7 @@ a {
     display: block;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .main-nav {
     display: flex;
     align-items: center;
@@ -126,7 +111,7 @@ a {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
   .menu-button {
     display: inline-flex;
     margin: 0;
@@ -148,7 +133,7 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .menu-button {
     display: none;
   }
@@ -376,6 +361,7 @@ a {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -409,6 +395,7 @@ a {
   width: 100%;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 20px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -884,6 +871,7 @@ a {
 .form-input {
   width: 100%;
   margin: 0;
+  margin-bottom: 5px;
   padding: 12px 18px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -913,7 +901,7 @@ a {
 
 .form-label {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 42px;
   transform: translateY(-50%);
   color: #000000;
