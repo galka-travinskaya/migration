@@ -1,5 +1,4 @@
 
-
 .page-title {
     text-align: center;
     line-height: 1.43;
@@ -19,26 +18,14 @@
     }  
 }
 
-// .section-title {
-//     margin-bottom: 50px;
-//     font-size: 36px;
-//     line-height: 0.85;
-//     color: $title-text-color;
-//     font-weight: 700;
-//     text-align: center;
-// }
-
 .adv-list {
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
-        // width: calc((100% - 20px) / 2);
     }
 
     @media screen and (min-width: 1200PX) {
-        // width: calc((100% - 80px) / 5);
-        // width: calc(100% / 5);
         padding: 5px;
         margin: -15px;
     }
@@ -52,9 +39,6 @@
     @media screen and (min-width: 768px) {
         @media screen and (max-width: 1200px) {
             margin: 15px;
-        // display: flex;
-        // flex-wrap: wrap;
-        // width: calc((100% - 30px) / 5);
         flex-basis: calc(100%/2 - 30px);
         }
     }
@@ -62,10 +46,6 @@
         flex-wrap: nowrap;
         margin: 15px;
         width: calc(100%/5 - 30px);
-        // width: calc(100% / 5);
-        // &:not(:last-child) {
-        //     margin-right: 5px;
-        // }
     }
 }
 
@@ -123,7 +103,6 @@
 .citizenship-desc {
     margin-bottom: 20px;
     font-weight: 500;
-    // font-size: 23px;
     line-height: 1.18;
     text-align: center;
     @media screen and (max-width: 768px) {
