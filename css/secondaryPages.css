@@ -52,11 +52,15 @@ a {
   text-align: justify;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   display: block;
   width: 100px;
   height: 60px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .page-header {
@@ -214,7 +218,6 @@ a {
   background-color: #1d30bf;
 }
 
-/* .site-nav */
 @media screen and (max-width: 1199px) {
   .button {
     border-radius: 5px;

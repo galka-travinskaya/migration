@@ -10,6 +10,7 @@
     @media screen and (min-width: 768px) {
         display: flex;
         justify-content: space-evenly;
+        align-items: center;
     }
 
     & li {
@@ -18,8 +19,10 @@
 }
 
 .contacts h3 {
+    color: $title-text-color;
     @media screen and (max-width: 768px) {
-        border-top: 2px solid $title-text-color;
+        padding-top: 10px;
+        // border-top: 2px solid $title-text-color;
     }
     @media screen and (min-width: 768px) {
         border-top: none
@@ -33,9 +36,10 @@
     color: $title-text-color;
 
     @media screen and (max-width: 768px) {
-        margin-top: 10px;
+        // margin-top: 5px;
+        margin-bottom: 10px;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     &:hover,
@@ -47,7 +51,8 @@
 .contacts-list {
     display: flex;
     @media screen and (max-width: 768px) {
-        margin-top: 10px;
+        // margin-top: 10px;
+        margin-bottom: 10px;
         justify-content: center;
     }
 
@@ -97,4 +102,14 @@
 .contacts-icon {
     width: 20px;
     height: 20px;
+}
+
+// .contacts-schedule {
+
+// }
+
+.contacts p {
+    font-weight: 500;
+    font-size: 18px;
+    color: $title-text-color;
 }

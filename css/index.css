@@ -52,11 +52,15 @@ a {
   text-align: justify;
 }
 
+a {
+  text-decoration: none;
+}
+
 .logo {
   display: block;
   width: 100px;
   height: 60px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .page-header {
@@ -214,7 +218,6 @@ a {
   background-color: #1d30bf;
 }
 
-/* .site-nav */
 @media screen and (max-width: 1199px) {
   .button {
     border-radius: 5px;
@@ -771,15 +774,19 @@ a {
   .contacts {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
   }
 }
 .contacts li {
   text-align: center;
 }
 
+.contacts h3 {
+  color: rgba(0, 0, 0, 0.8);
+}
 @media screen and (max-width: 768px) {
   .contacts h3 {
-    border-top: 2px solid rgba(0, 0, 0, 0.8);
+    padding-top: 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -796,9 +803,9 @@ a {
 }
 @media screen and (max-width: 768px) {
   .contacts a {
-    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 .contacts a:hover, .contacts a:focus {
@@ -810,7 +817,7 @@ a {
 }
 @media screen and (max-width: 768px) {
   .contacts-list {
-    margin-top: 10px;
+    margin-bottom: 10px;
     justify-content: center;
   }
 }
@@ -857,6 +864,12 @@ a {
 .contacts-icon {
   width: 20px;
   height: 20px;
+}
+
+.contacts p {
+  font-weight: 500;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .backdrop {
