@@ -342,20 +342,20 @@ a {
 @media screen and (max-width: 768px) {
   .hero-Bulgary {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/20.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/20.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-Bulgary {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/20.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/20.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-Bulgary {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/20.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/20.jpg);
   }
 }
 
@@ -376,20 +376,20 @@ a {
 @media screen and (max-width: 768px) {
   .hero-Moldova {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/Moldova-1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Moldova-1.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-Moldova {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/Moldova-1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Moldova-1.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-Moldova {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/Moldova-1.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Moldova-1.jpg);
   }
 }
 
@@ -410,20 +410,20 @@ a {
 @media screen and (max-width: 768px) {
   .hero-Romania {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/best-of-romania-in-11-days-4-e1593848114300.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/best-of-romania-in-11-days-4-e1593848114300.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .hero-Romania {
     height: 400px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/best-of-romania-in-11-days-4-e1593848114300.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/best-of-romania-in-11-days-4-e1593848114300.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-Romania {
     max-width: 1600px;
     height: 600px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../../images/best-of-romania-in-11-days-4-e1593848114300.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/best-of-romania-in-11-days-4-e1593848114300.jpg);
   }
 }
 
