@@ -769,21 +769,27 @@ a {
   padding-bottom: 50px;
   background-color: rgba(240, 240, 240, 0.8);
 }
-
-@media screen and (min-width: 768px) {
-  .contacts {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-}
-.contacts li {
+.page-footer h3 {
   text-align: center;
 }
 
-.contacts h3 {
-  color: rgba(0, 0, 0, 0.8);
+@media screen and (max-width: 768px) {
+  .footer-wrap {
+    margin-bottom: 10px;
+  }
 }
+@media screen and (min-width: 768px) {
+  .footer-wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+}
+.footer-wrap li {
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .contacts h3 {
     padding-top: 10px;
@@ -870,6 +876,55 @@ a {
   font-weight: 500;
   font-size: 18px;
   color: rgba(0, 0, 0, 0.8);
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+@media screen and (max-width: 1200px) {
+  .clients {
+    flex-wrap: wrap;
+  }
+}
+
+.clients-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+}
+@media screen and (max-width: 1200px) {
+  .clients-item {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients-item {
+    width: 20%;
+  }
+}
+
+.img-clients {
+  width: 40px;
+  height: 40px;
+}
+
+.img-fia {
+  width: 60px;
+  height: 40px;
+}
+
+.img-Kuehnenagel,
+.img-epam {
+  width: 80px;
+  height: 40px;
+}
+
+.img-Mitsubishi {
+  width: 45px;
+  height: 50px;
 }
 
 .backdrop {

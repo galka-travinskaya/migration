@@ -4,26 +4,33 @@
     padding-top: 50px;
     padding-bottom: 50px;
     background-color: $background-header-color;
-}
-
-.contacts {
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    & li {
+    
+    & h3 {
         text-align: center;
     }
 }
 
+.footer-wrap {
+    @media screen and (max-width: 768px) {
+        margin-bottom: 10px;
+    }
+    
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+& li {
+    text-align: center;
+}
+}
+
 .contacts h3 {
-    color: $title-text-color;
     @media screen and (max-width: 768px) {
         padding-top: 10px;
-        // border-top: 2px solid $title-text-color;
     }
+
     @media screen and (min-width: 768px) {
         border-top: none
     }
@@ -36,7 +43,6 @@
     color: $title-text-color;
 
     @media screen and (max-width: 768px) {
-        // margin-top: 5px;
         margin-bottom: 10px;
         font-weight: 500;
         font-size: 18px;
@@ -51,7 +57,6 @@
 .contacts-list {
     display: flex;
     @media screen and (max-width: 768px) {
-        // margin-top: 10px;
         margin-bottom: 10px;
         justify-content: center;
     }
@@ -104,12 +109,52 @@
     height: 20px;
 }
 
-// .contacts-schedule {
-
-// }
-
 .contacts p {
     font-weight: 500;
     font-size: 18px;
     color: $title-text-color;
+}
+
+.clients {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    @media screen and (max-width: 1200px) {  
+        flex-wrap: wrap;   
+    }
+}
+
+.clients-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    @media screen and (max-width: 1200px) {
+        width: calc(100% / 3);
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: calc(100% / 5);  
+    }
+}
+
+.img-clients {
+ width: 40px;
+ height: 40px;
+}
+
+.img-fia {
+    width: 60px;
+    height: 40px; 
+}
+
+.img-Kuehnenagel,
+.img-epam {
+    width: 80px;
+    height: 40px;
+}
+
+.img-Mitsubishi {
+    width: 45px;
+    height: 50px;
 }
