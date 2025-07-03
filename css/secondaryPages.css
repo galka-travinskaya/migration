@@ -492,7 +492,7 @@ a {
     margin: -15px;
   }
 }
-@media screen and (min-width: 1200PX) {
+@media screen and (min-width: 1200px) {
   .adv-list {
     padding: 5px;
     margin: -15px;
