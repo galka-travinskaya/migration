@@ -360,101 +360,65 @@
                         <use href="./images/symbol-defs.svg#icon-cancel-circle"></use>
                     </svg>
                 </button>
-                <b class="form-title">Оставьте заявку</b>
-                <p class="form-text">Оставьте заявку, и наш менеджер свяжется с вами в ближайшее время для бесплатной консультации.</p>
-                <div class="form-field">
-                    <input class="form-input" 
-                           type="text" 
-                           name="name" 
-                           id="name" 
-                           placeholder=" " />
-                    <label class="form-label" 
-                           for="name">
-                           Имя
-                    </label>
-                    <svg class="icon-modal" 
-                         width="15" 
-                         height="15">
-                        <use href="./images/sprite1.svg#icon-PersonBlack"/>
-                    </svg>
-                </div>
 
-                <div class="form-field">
-                    <input class="form-input" 
-                           type="tel" 
-                           name="tel" 
-                           id="tel" 
-                           placeholder=" "/>
-                    <label class="form-label" 
-                           for="tel">
-                           Телефон
-                    </label>
-                    <svg class="icon-modal" 
-                         width="15" 
-                         height="15">
-                        <use href="./images/sprite1.svg#icon-PhoneBlack"/>
-                    </svg>
-                </div>
+                <form class="modal-form"> <!-- ← ДОДАЛА ФОРМУ -->
 
-                <div class="form-field">
-                    <input class="form-input" 
-                           type="email" 
-                           name="email" 
-                           id="email" 
-                           placeholder=" "/>
-                    <label class="form-label" 
-                            for="email">
-                            Почта
-                    </label>
-                    <svg class="icon-modal" 
-                         width="15" 
-                         height="15">
-                        <use href="./images/sprite1.svg#icon-EmailBlack"/>
-                    </svg>
-                </div>
-                
-                <div role="group">
-                    <b class="form-headline">Выберите страну</b>
-                    <div class="checkblock">
-                        <input class="checkbox" type="checkbox" 
-                               name="country" 
-                               value="Bulgary" 
-                               id="Bulgary"/>
-                        
-                        <label class="checkbox-label" for="Bulgary">
-                            <span>Болгария</span>
-                        </label>
+                    <b class="form-title">Оставьте заявку</b>
+                    <p class="form-text">
+                        Оставьте заявку, и наш менеджер свяжется с вами в ближайшее время.
+                    </p>
+
+                    <div class="form-field">
+                        <input class="form-input" type="text" name="name" id="name" placeholder=" " />
+                        <label class="form-label" for="name">Имя</label>
+                        <svg class="icon-modal" width="15" height="15">
+                            <use href="./images/sprite1.svg#icon-PersonBlack"/>
+                        </svg>
                     </div>
-                    <div class="checkblock">
-                        <input class="checkbox" type="checkbox" 
-                               name="country" 
-                               value="Romania" 
-                               id="Romania"/>
-                        
-                        <label class="checkbox-label" for="Romania">
-                            <span>Румыния</span>
-                        </label>
-                    </div>
-                    <div class="checkblock">
-                        <input class="checkbox" type="checkbox" 
-                               name="country" 
-                               value="Moldova" 
-                               id="Moldova"/>
-                        
-                        <label class="checkbox-label" for="Moldova">
-                            <span>Молдова</span>
-                        </label>
-                    </div>
-                </div>
 
-                <button type="submit" 
-                        class="btn-submit"
-                        data-modal-close>
-                        Отправить
-                </button>
-
+            <div class="form-field">
+                <input class="form-input" type="tel" name="tel" id="tel" placeholder=" "/>
+                <label class="form-label" for="tel">Телефон</label>
+                <svg class="icon-modal" width="15" height="15">
+                    <use href="./images/sprite1.svg#icon-PhoneBlack"/>
+                </svg>
             </div>
-        </div>
+
+            <div class="form-field">
+                <input class="form-input" type="email" name="email" id="email" placeholder=" "/>
+                <label class="form-label" for="email">Почта</label>
+                <svg class="icon-modal" width="15" height="15">
+                    <use href="./images/sprite1.svg#icon-EmailBlack"/>
+                </svg>
+            </div>
+
+            <div role="group">
+                <b class="form-headline">Выберите страну</b>
+
+                <div class="checkblock">
+                    <input class="checkbox" type="checkbox" name="country" value="Bulgary" id="Bulgary"/>
+                    <label class="checkbox-label" for="Bulgary"><span>Болгария</span></label>
+                </div>
+
+                <div class="checkblock">
+                    <input class="checkbox" type="checkbox" name="country" value="Romania" id="Romania"/>
+                    <label class="checkbox-label" for="Romania"><span>Румыния</span></label>
+                </div>
+
+                <div class="checkblock">
+                    <input class="checkbox" type="checkbox" name="country" value="Moldova" id="Moldova"/>
+                    <label class="checkbox-label" for="Moldova"><span>Молдова</span></label>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Отправить
+            </button>
+
+        </form> <!-- КІНЕЦЬ ФОРМИ -->
+    </div>
+</div>
+
         
         <script src="./js/modal.js" type="module"></script>
         <script src="./js/menu.js" type="module"></script>
